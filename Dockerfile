@@ -1,6 +1,6 @@
 FROM frappe/erpnext:v15.85.0
 
-USER frappe
+USER root
 
 # Copy your custom app into the image
 COPY --chown=frappe:frappe ./apps/attendance_app /home/frappe/frappe-bench/apps/attendance_app
